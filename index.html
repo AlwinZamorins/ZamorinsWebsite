@@ -9,28 +9,45 @@
     <meta name="og:title" content="Zamorins Solutions" property="og:title"><meta>
     <meta name="og:description" content="We are innovate technology company with mighty mission to empower and simplify the lives of our users. With a seasoned global team, we bring our passion and personal touch to every project" property="og:description"><meta>
     <meta name="og:image" content="assets/images/logo.png" property="og:image"><meta>
-
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="assets/css/loading.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body ng-app="MyApp" ng-controller="mainController">
-    
     <!--Loader-->
     <div id="loader_div">
         <div class="loader"></div>
     </div>
     <!--/Loader-->
-    <a href="#/home">Home</a>
     <!--MAIN-CONTENT-->
-    <div id="main_content" class="hide">
-        <div>
+    <div class="main_content hide" id="main_content">
+       <nav class="nav_webview hide">
+          <img src="assets/images/logo.png">
+           <a href="#/contact" id="nav_contact">Contact</a>
+           <a href="#/works" id="nav_works">Works</a>
+           <a href="#/team" id="nav_team">Team</a>
+           <a href="#/about" id="nav_about">About</a>
+           <a href="#/home" id="nav_home">Home</a>
+       </nav>
+       <nav class="nav_mobview">
+          <img src="assets/images/logo.png">
+          <span class="glyphicon glyphicon-align-justify"></span>
+           <!--<a href="#/contact" id="nav_contact">Contact</a>
+           <a href="#/works" id="nav_works">Works</a>
+           <a href="#/team" id="nav_team">Team</a>
+           <a href="#/about" id="nav_about">About</a>
+           <a href="#/home" id="nav_home">Home</a>-->
+       </nav>
+
+        <div class="content">
             <ng-view></ng-view>
         </div>
     </div>
     <!--/MAIN-CONTENT-->
-        
+    
     <!--Link all scripts in map-scripts.js file-->
     <script src="app/js/map-scripts.js"></script>
 </body>
