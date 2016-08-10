@@ -2,44 +2,37 @@
 
 <head>
     <title>Zamorins Solutions</title>
-    <meta name="description" content="Simple Touch Infinite Possibilities" property="description">
-    <meta>
-    <meta name="keywords" content="Zamorins Solutions, Web Development, Mobile App Development" property="keywords">
-    <meta>
-    <meta name="canonical" content="http://zamorinstech.com/" property="canonical">
-    <meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1" property="viewport">
-    <meta>
-    <meta name="og:title" content="Zamorins Solutions" property="og:title">
-    <meta>
-    <meta name="og:description" content="We are innovate technology company with mighty mission to empower and simplify the lives of our users. With a seasoned global team, we bring our passion and personal touch to every project" property="og:description">
-    <meta>
-    <meta name="og:image" content="assets/images/logo.png" property="og:image">
-    <meta>
+    <meta name="description" content="Simple Touch Infinite Possibilities" property="description"><meta>
+    <meta name="keywords" content="Zamorins Solutions, Web Development, Mobile App Development" property="keywords"><meta>
+    <meta name="canonical" content="http://zamorinstech.com/" property="canonical"><meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1" property="viewport"><meta>
+    <meta name="og:title" content="Zamorins Solutions" property="og:title"><meta>
+    <meta name="og:description" content="We are innovate technology company with mighty mission to empower and simplify the lives of our users. With a seasoned global team, we bring our passion and personal touch to every project" property="og:description"><meta>
+    <meta name="og:image" content="assets/images/logo.png" property="og:image"><meta>
 
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/loading.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    
 </head>
 
 <body ng-app="MyApp" ng-controller="mainController">
     
     <!--Loader-->
-    <div id="content">
-        <span class="expand"></span>
+    <div id="loader_div">
+        <div class="loader"></div>
     </div>
     <!--/Loader-->
-    
+    <a href="#/home">Home</a>
     <!--MAIN-CONTENT-->
-        <div class="content-wrapper">
+    <div id="main_content" class="hide">
+        <div>
             <ng-view></ng-view>
-            <!--<content-page></content-page>-->
         </div>
+    </div>
     <!--/MAIN-CONTENT-->
         
     <!--Link all scripts in map-scripts.js file-->
     <script src="app/js/map-scripts.js"></script>
-
 </body>
 
 </html>
