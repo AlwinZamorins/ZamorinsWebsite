@@ -35,6 +35,12 @@ app.controller('mainController', function($scope) {
         $("#loader_div").addClass('hide');
         $("#main_content").removeClass('hide');
     });
+    $scope.goToFb = function() {
+        window.location.assign("https://www.facebook.com/zamorinstech/");
+    };
+    $scope.goToIn = function() {
+        window.location.assign("https://www.linkedin.com/company/7601621?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_7601621%2Cidx%3A0");
+    };
 });
 app.controller('homeController', function($scope) {
     $("#nav_home").addClass('selected_nav');
@@ -42,6 +48,12 @@ app.controller('homeController', function($scope) {
     $("#nav_team").removeClass('selected_nav');
     $("#nav_works").removeClass('selected_nav');
     $("#nav_contact").removeClass('selected_nav');
+    
+    /*animation*/
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('#nav_home').addClass('animated zoomIn').one(animationEnd, function() {
+            $('#nav_home').removeClass('animated  zoomIn');
+        });
 });
 app.controller('aboutController', function($scope) {
     $("#nav_home").removeClass('selected_nav');
@@ -49,6 +61,12 @@ app.controller('aboutController', function($scope) {
     $("#nav_team").removeClass('selected_nav');
     $("#nav_works").removeClass('selected_nav');
     $("#nav_contact").removeClass('selected_nav');
+    
+    /*animation*/
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('#nav_about').addClass('animated zoomIn').one(animationEnd, function() {
+            $('#nav_about').removeClass('animated  zoomIn');
+        });
 });
 app.controller('teamController', function($scope) {
     $("#nav_home").removeClass('selected_nav');
@@ -56,6 +74,11 @@ app.controller('teamController', function($scope) {
     $("#nav_team").addClass('selected_nav');
     $("#nav_works").removeClass('selected_nav');
     $("#nav_contact").removeClass('selected_nav');
+    
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('#nav_team').addClass('animated zoomIn').one(animationEnd, function() {
+            $('#nav_team').removeClass('animated  zoomIn');
+        });
 });
 app.controller('worksController', function($scope) {
     $("#nav_home").removeClass('selected_nav');
@@ -63,6 +86,11 @@ app.controller('worksController', function($scope) {
     $("#nav_team").removeClass('selected_nav');
     $("#nav_works").addClass('selected_nav');
     $("#nav_contact").removeClass('selected_nav');
+    
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('#nav_works').addClass('animated zoomIn').one(animationEnd, function() {
+            $('#nav_works').removeClass('animated  zoomIn');
+        });
 });
 app.controller('contactController', function($scope) {
     $("#nav_home").removeClass('selected_nav');
@@ -70,4 +98,9 @@ app.controller('contactController', function($scope) {
     $("#nav_team").removeClass('selected_nav');
     $("#nav_works").removeClass('selected_nav');
     $("#nav_contact").addClass('selected_nav');
+    
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('#nav_contact').addClass('animated zoomIn').one(animationEnd, function() {
+            $('#nav_contact').removeClass('animated  zoomIn');
+        });
 });

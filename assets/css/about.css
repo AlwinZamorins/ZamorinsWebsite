@@ -1,0 +1,96 @@
+
+
+.grid {
+    margin-top: 40px;
+    background-color: #EBE9E8;
+    overflow: auto;
+    padding: 2%;
+    opacity: .9;
+}
+
+.bgviolet{
+    background-color: #663399;
+}
+
+.bgblue{
+    background-color: #22A7F0;
+}
+
+.bggreen{
+    background-color: #26A65B;
+}
+
+.bgorange{
+    background-color: #E87E04;
+}
+
+
+.txtviolet{
+    color: #663399;
+}
+
+.txtblue{
+    color: #22A7F0;
+}
+
+.txtgreen{
+    color: #26A65B;
+}
+
+.txtorange{
+    color: #E87E04;
+}
+
+.grid span{
+    font-size: 50px;
+    padding: 5%;
+    border-radius: 50px;
+    margin-bottom: 2%;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    margin: 1%;
+    opacity: 0.7;
+}
+
+.grid span:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+.grid h4{
+    font-size: 24px;
+}
+
+.grid p{
+    font-size: 18px;
+    padding: 5%;
+    border: 1px solid;
+    box-shadow: 0px 0px 2px 1px;
+}
+
+.aboutPage{
+    margin:10px;
+    padding: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+.about_text {
+    margin-top: 40px;
+    background-color: #333333;
+    overflow: auto;
+    padding: 2%;
+    opacity: .9;
+    color: white;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.about_text span{
+    font-size: 20px;
+    border: 2px solid;
+    padding: 10px;
+}

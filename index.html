@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>Zamorins Solutions</title>
     <meta name="description" content="Simple Touch Infinite Possibilities" property="description"><meta>
@@ -13,10 +12,13 @@
     <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="assets/css/loading.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--social media-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
-<body ng-app="MyApp" ng-controller="mainController">
+<body class="body" ng-app="MyApp" ng-controller="mainController">
     <!--Loader-->
     <div id="loader_div">
         <div class="loader"></div>
@@ -24,8 +26,10 @@
     <!--/Loader-->
     <!--MAIN-CONTENT-->
     <div class="main_content hide" id="main_content">
-       <nav class="nav_webview hide">
-          <img src="assets/images/logo.png">
+       <nav class="nav_webview">
+           <img src="assets/images/logo.png">
+           <h1 class="zamorins_title">Zamorins Solutions <br> <span>Simple Touch, Infinite Possibilities</span></h1>
+           <button class="btn btn-info">PAY NOW</button>
            <a href="#/contact" id="nav_contact">Contact</a>
            <a href="#/works" id="nav_works">Works</a>
            <a href="#/team" id="nav_team">Team</a>
@@ -34,22 +38,20 @@
        </nav>
        <nav class="nav_mobview">
           <img src="assets/images/logo.png">
-          <span class="glyphicon glyphicon-align-justify"></span>
-           <!--<a href="#/contact" id="nav_contact">Contact</a>
-           <a href="#/works" id="nav_works">Works</a>
-           <a href="#/team" id="nav_team">Team</a>
-           <a href="#/about" id="nav_about">About</a>
-           <a href="#/home" id="nav_home">Home</a>-->
+           <span class="material-icons ">menu</span>
        </nav>
-
         <div class="content">
             <ng-view></ng-view>
         </div>
+        <div class="social_media animated pulse">
+            <ul>
+                <li><span ng-click="goToIn()" title="Go to LinkedIn Page" class='symbol in'>&#xe452;</span></li>
+                <li><span ng-click="goToFb()" title="Go to Facebook Page" class='symbol fb'>&#xe427;</span></li>
+            </ul>
+        </div>
     </div>
     <!--/MAIN-CONTENT-->
-    
     <!--Link all scripts in map-scripts.js file-->
     <script src="app/js/map-scripts.js"></script>
 </body>
-
 </html>

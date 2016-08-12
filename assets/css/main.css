@@ -1,3 +1,19 @@
+.body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+
+
+
 .hide{
     display: none;
 }
@@ -7,21 +23,49 @@ body{
     margin-left: 0px;
     margin-bottom: 0px;
     margin-right: 0px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
 }
 
 /*navigation style*/
+
+.zamorins_title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    margin: 1%;
+    letter-spacing: 1px;
+    width: 308px;
+    display: inline;
+    position: absolute;
+    background-image: -webkit-linear-gradient(92deg,#FF7F50,#5E611A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+
+}
+.zamorins_title span{    font-size: 12px;
+    background-image: -webkit-linear-gradient(92deg,#5A6126,#5A6159);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    text-transform: capitalize;
+}
+
 .nav_webview{
     background-color: rgba(255,255,255,0.9);
     padding: 10px;
 }
 
 .nav_webview a{
-    color: #CDDC39;
+    color: #5A611A;
     padding: 10px;
     float: right;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: uppercase;
     transition-duration: .2s;
     transition-timing-function: linear;
@@ -35,6 +79,16 @@ body{
     padding-bottom: 2px;
 }
 
+.nav_webview img{
+    width: 50px;
+}
+
+.nav_webview button{
+    float: right;
+    margin-top: 1%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .selected_nav{
     border-bottom:2px solid #CDDC39;
     color: coral !important;
@@ -42,7 +96,8 @@ body{
 }
 
 .nav_mobview{
-   background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.9);
+    display:none;
 }
 
 .nav_mobview img{
@@ -58,13 +113,102 @@ body{
     cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+    .nav_webview{
+        display: none;
+    } 
+    .nav_mobview{
+        display: block;
+    }
+}
 
 /*navigation style*/
 
 
 /*content*/
 .content {
-	background-color: #E0E0E0;
+	/*background-color: #E0E0E0;*/
+    color: white;
 }
 
 /*content*/
+
+
+/*social media*/
+.social_media{
+    position: fixed;
+    width: 100%;
+    bottom: 30px;
+}
+
+.social_media ul{
+    float: left;
+    list-style-type: none;
+    padding: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.social_media li{    
+    font-size: 30px;
+    line-height: .9;
+    border-radius: 4px;
+    opacity: 0.8;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+
+.fb{
+    color: #3b5998;
+}
+
+.fb:hover{
+    color: coral;
+}
+
+.in{
+    color: #0077B5;
+}
+
+.in:hover{
+    color: coral;
+}
+
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../others/monosocialiconsfont/MonoSocialIconsFont-1.10.eot');
+    src: url('../others/monosocialiconsfont/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../others/monosocialiconsfont/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../others/monosocialiconsfont/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../others/monosocialiconsfont/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../others/monosocialiconsfont/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+					
+
+/*social media*/
+
+
