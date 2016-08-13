@@ -1,0 +1,119 @@
+.team {
+	background-color: #EBE9E8;
+    overflow: auto;
+    padding: 2%;
+    opacity: .9;
+}
+
+.teamPage{
+    margin-top: 0px;
+    padding: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.team_head{
+    color: dimgrey;
+}
+
+.team_head h1{
+    font-size: 23px;
+    margin-top: 0px;
+}
+
+.team_head hr{
+    border-top: 1px solid dimgrey;
+    margin-top: 0px;
+}
+
+.team img{
+	width: 50%;
+    border-radius: 50%;
+}
+
+.team_details{
+    padding: 2%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+
+.team_details:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.red{
+    color: #DF5342;
+}
+
+.yellow{
+    color: #D9AF0C;
+}
+
+.green{
+    color: #07AA7E;
+}
+
+.purple{
+    color: purple;
+}
+
+div.latha{
+    position: relative;
+}
+
+div.latha:hover a{
+    display: block;
+}
+
+div.latha a{
+    position:absolute;
+    top: 80px;
+    left: 100px;
+    display:none;
+}
+
+div.basu{
+    position: relative;
+}
+
+div.basu:hover a{
+    display: block;
+}
+
+div.basu a{
+    position:absolute;
+    top: 80px;
+    left: 100px;
+    display:none;
+}
+
+div.namita{
+    position: relative;
+}
+
+div.namita:hover a{
+    display: block;
+}
+
+div.namita a{
+    position:absolute;
+    top: 80px;
+    left: 100px;
+    display:none;
+}
+
+.team_details a{
+	font-size: 40px;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.dev_team img{
+    width: 310px !important;
+    border-radius: 5%;
+}

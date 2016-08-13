@@ -1,0 +1,106 @@
+.contactPage{
+    background-color: dimgrey;
+    margin-top: 2%;
+    opacity: 0.9;
+}
+
+.contact_head h1{
+	text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 1%;
+}
+
+.contact_head h4{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+}
+
+.contact_head p{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 13px;
+}
+
+hr{
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+    width: 20%;
+}
+
+.input_text{
+    width:100%;
+    height: 40px;
+    margin-top: 2%;
+    padding: 2%;
+    font-size: 16px;
+    color: dimgrey;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.input_textarea{
+    width:100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 16px;
+    color: dimgrey;
+    font-family: 'Josefin Sans', sans-serif;
+    resize: none !important;
+}
+
+
+.input_textarea::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.input_textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.input_textarea::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.send_message{
+    margin-bottom: 5% !important;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #FF6F6F !important;
+}
+
+.send_message span{
+    font-size: 8px;
+}
+
+.contact_details {
+	padding: 1%;
+}
+
+.detail{
+    padding: 3%;
+}
+
+.detail h4{
+    display: inline;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.offshore_num{
+    padding-left: 37px !important; 
+}
+
+.contact_form {
+    border-right: 2px solid;
+    margin-bottom: 2%;
+}
+
+.love {
+    color: #FF9696;
+    font-size: 20px;
+    font-weight: bold;
+}
