@@ -24,7 +24,7 @@ body{
     margin-bottom: 0px;
     margin-right: 0px;
     background-image: url('../images/bg.jpg');
-    background-size: cover;
+    background-size: auto;
 }
 
 /*navigation style*/
@@ -105,14 +105,6 @@ body{
     padding: 1%;
 }
 
-.nav_mobview span{
-    color: #FF733F;
-    float: right;
-    padding: 2%;
-    font-size: 22px;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 1024px) {
     .nav_webview{
         display: none;
@@ -120,8 +112,78 @@ body{
     .nav_mobview{
         display: block;
     }
+    .nav_mobview img {
+        width: 60px;
+        padding: 1%;
+    }
+    .menu {
+        color: #FF733F;
+        float: right;
+        padding: 13px;
+        font-size: 28px !important;
+        cursor: pointer;
+    }
 }
 
+@media screen and (max-width: 600px) {
+    .zamorins_title_mob span{
+        display: none !important;
+    }
+    .zamorins_title_mob{
+        padding-top: 15px !important;
+        font-size: 18px !important;
+    }
+    .nav_mobview img {
+        width: 47px;
+        padding: 1%;
+    }
+}
+
+.mob_nav_content{
+    padding: 10px;
+    text-align: center;
+}
+
+.mob_nav_content a{
+    color: #5A611A;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    letter-spacing: 1px;
+}
+
+.mob_nav_content a:hover{
+    color: coral;
+}
+
+.zamorins_title_mob {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    margin: 1%;
+    letter-spacing: 1px;
+    display: inline;
+    position: absolute;
+    background-image: -webkit-linear-gradient(92deg,#FF7F50,#5E611A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+     padding-top: 8px;
+}
+.zamorins_title_mob span{
+    font-size: 10px;
+    background-image: -webkit-linear-gradient(92deg,#5A6126,#5A6159);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    text-transform: capitalize;
+    float: left;
+}
 /*navigation style*/
 
 

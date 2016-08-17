@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Zamorins Solutions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Simple Touch Infinite Possibilities" property="description"><meta>
     <meta name="keywords" content="Zamorins Solutions, Web Development, Mobile App Development" property="keywords"><meta>
     <meta name="canonical" content="http://zamorinstech.com/" property="canonical"><meta>
@@ -15,8 +18,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/about.css">
     <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
     <link rel="stylesheet" type="text/css" href="assets/css/team.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/works.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/others/bootstrap/dist/css/bootstrap.min.css">
     <!--social media-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -39,8 +44,16 @@
            <a href="#/home" id="nav_home">Home</a>
        </nav>
        <nav class="nav_mobview">
-          <img src="assets/images/logo.png">
-           <span class="material-icons ">menu</span>
+           <img src="assets/images/logo.png">
+           <h1 class="zamorins_title_mob">Zamorins Solutions <br> <span>Simple Touch, Infinite Possibilities</span></h1>
+           <span ng-click="ShowHide()" class="material-icons menu" id="menu">{{Text}}</span>
+           <div ng-if="IsVisible" class="mob_nav_content" id="menu_list">
+               <a href="#/home" class="animated fadeInUp">Home</a><br/>
+               <a href="#/about" class="animated fadeInUp">About</a><br/>
+               <a href="#/team" class="animated fadeInUp">Team</a><br/>
+               <a href="#/works" class="animated fadeInUp">Works</a><br/>
+               <a href="#/contact" class="animated fadeInUp">Contact</a>
+           </div>
        </nav>
         <div class="content">
             <ng-view></ng-view>

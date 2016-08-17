@@ -41,6 +41,22 @@ app.controller('mainController', function($scope) {
     $scope.goToIn = function() {
         window.location.assign("https://www.linkedin.com/company/7601621?trk=tyah&trkInfo=clickedVertical%3Acompany%2CentityType%3AentityHistoryName%2CclickedEntityId%3Acompany_7601621%2Cidx%3A0");
     };
+    
+    /*Menu in mob view*/
+    /*animation*/
+    
+    $scope.IsVisible = false;
+    $scope.Text = 'menu';
+    $scope.ShowHide = function() {
+        $scope.IsVisible = $scope.IsVisible ? false : true;
+        $scope.Text = $scope.IsVisible ? 'close' : 'menu';
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('#menu').addClass('animated bounceInDown').one(animationEnd, function() {
+            $('#menu').removeClass('animated  bounceInDown');
+        });
+        
+    }
+    
 });
 app.controller('homeController', function($scope) {
     $("#nav_home").addClass('selected_nav');
@@ -54,6 +70,19 @@ app.controller('homeController', function($scope) {
         $('#nav_home').addClass('animated zoomIn').one(animationEnd, function() {
             $('#nav_home').removeClass('animated  zoomIn');
         });
+    
+    /*Carousel*/
+    $('#homeCarousel').carousel({
+        interval:5000,
+        pause: "false"
+    });
+    $('#playButton').click(function () {
+        $('#homeCarousel').carousel('cycle');
+    });
+    $('#pauseButton').click(function () {
+        $('#homeCarousel').carousel('pause');
+    });
+    
 });
 app.controller('aboutController', function($scope) {
     $("#nav_home").removeClass('selected_nav');

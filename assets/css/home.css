@@ -1,0 +1,13 @@
+.carousel-caption{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-caption h4{
+        display: none;
+    }
+}
+
+.item img{
+	width: 100%;
+}
