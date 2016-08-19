@@ -11,3 +11,71 @@
 .item img{
 	width: 100%;
 }
+
+.lang_used {
+    margin-top: 2%;
+    padding: 1%;
+    margin-top: 0px;
+    overflow: auto;
+    background-color:#E0E0E0; 
+}
+
+
+.lang_used h4{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: dimgray;
+    border: 1px solid dimgray;
+}
+
+.lang_used h3{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.lang_icon{
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    font-size: 50px !important;
+    color: white;
+}
+
+.lang_gird1{
+    background-color: #8D6E63;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+
+.lang_gird1:hover{
+    opacity: 0.5;
+}
+
+.lang_gird2{
+    background-color: #37474F;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;transition-duration: .2s;
+    transition-timing-function: linear;
+}
+
+.lang_gird2:hover{
+    opacity: 0.5;
+}
+
+
+.lang_gird3{
+    background-color: #4DD0E1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;transition-duration: .2s;
+    transition-timing-function: linear;
+}
+
+.lang_gird3:hover{
+    opacity: 0.5;
+}

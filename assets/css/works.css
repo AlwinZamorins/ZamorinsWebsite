@@ -2,6 +2,7 @@
     background-color: dimgrey;
     margin-top: 2%;
     opacity: 0.9;
+    overflow: auto;
 }
 
 .worksPage h1{
@@ -15,4 +16,18 @@
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 14px;
+}
+
+.work_grid{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.work_grid img{
+    width: 25%;
+}
+
+.work_grid div{
+    padding: 1%;
+    
 }
