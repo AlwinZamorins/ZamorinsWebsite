@@ -8,6 +8,11 @@
     }
 }
 
+.black_white{
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+
 .item img{
 	width: 100%;
 }

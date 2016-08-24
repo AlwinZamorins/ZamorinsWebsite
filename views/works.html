@@ -1,25 +1,93 @@
-<div class="worksPage"  ng-controller="worksController">
-   <div class="contact_head">
+<div class="worksPage" ng-controller="worksController">
+    <div class="contact_head">
         <h1>Our Works</h1>
         <hr>
         <h4>Software developers are the BRAINS behind the DESIGN , INSTALLATION , TESTING and MAINTENANCE of software systems.</h4>
     </div>
-    <div class="work_grid">
-        <div class="col-md-3 col-sm-6 work_grid_item1">
-            <img src="assets/images/web_parkzapp.png" alt="ParkZapp image"/>
-            <h3>Parkzapp Web Application</h3>
+    <div class="work_grid animated fadeInUp">
+        <div data-toggle="modal" data-target="#rcubeModal" class="col-md-3 col-sm-6 work_grid_item4">
+            <img src="assets/images/rcube.png" class="rcube" alt="rCube image" />
+            <p>rCube</p>
         </div>
-        <div class="col-md-3 col-sm-6 work_grid_item2">
-            <img src="assets/images/ios_parkzapp.png" alt="ParkZapp image"/>
-            <h3>Parkzapp iOS Application</h3>
-        </div>  
-        <div class="col-md-3 col-sm-6 work_grid_item3">
-            <img src="assets/images/barbound.png" alt="Bar Bound image"/>
-            <h3>Bar Bound Web Application</h3>
+        <div data-toggle="modal" data-target="#parkzappWebModal" class="col-md-3 col-sm-6 work_grid_item1">
+            <img src="assets/images/web_parkzapp.png" alt="ParkZapp image" />
+            <p>ParkZapp Web App</p>
         </div>
-        <div class="col-md-3 col-sm-6 work_grid_item4">
-            <img src="assets/images/rcube.png" alt="Bar Bound image"/>
-            <h3>rCube</h3>
+        <div data-toggle="modal" data-target="#parkzappiosModal" class="col-md-3 col-sm-6 work_grid_item2">
+            <img src="assets/images/ios_parkzapp.png" alt="ParkZapp image" />
+            <p>ParkZapp iOS App</p>
+        </div>
+        <div data-toggle="modal" data-target="#barModal" class="col-md-3 col-sm-6 work_grid_item3">
+            <img src="assets/images/barbound.png" alt="Bar Bound image" />
+            <p>BarBound Web App</p>
+        </div>
+    </div>
+</div>
+
+<!--rCube Modal -->
+<div class="modal fade" id="rcubeModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close material-icons" data-dismiss="modal">close</button>
+                <h4 class="modal-title">rCube</h4>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/rcube.png" alt="rCube image" />
+                <p>Small Description for rCube</p>
+                 <!--<a class="btn btn-info modal_btn">More Details</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--parkzappWeb Modal -->
+<div class="modal fade" id="parkzappWebModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close material-icons" data-dismiss="modal">close</button>
+                <h4 class="modal-title">ParkZapp Web App</h4>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/web_parkzapp2.png" alt="ParkZapp image" />
+                <p>ParkZapp is the INSPECTION web based application for your community's parks and playgrounds compliance needs.</p>
+                <a class="btn btn-info modal_btn" href="https://www.parkzapp.com" target="_blank">www.parkzapp.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--parkzappios Modal -->
+<div class="modal fade" id="parkzappiosModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close material-icons" data-dismiss="modal">close</button>
+                <h4 class="modal-title">ParkZapp iOS App</h4>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/ios_parkzapp.png" alt="ParkZapp image" />
+                <p>ParkZapp is the iOS application used for INSPECTION for your community's parks and playgrounds compliance needs.</p>
+                <a class="btn btn-info" href="https://itunes.apple.com/vn/app/parkzapp/id1018589745?mt=8" target="_blank">View in iTunes</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--bar Modal -->
+<div class="modal fade" id="barModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close material-icons" data-dismiss="modal">close</button>
+                <h4 class="modal-title">BarBound Web App</h4>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/barbound.png" alt="Bar Bound image" />
+                <p>Small Description for Bar Bound</p>
+                <!--<a class="btn btn-info modal_btn">More Details</a>-->
+            </div>
         </div>
     </div>
 </div>

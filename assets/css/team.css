@@ -35,15 +35,15 @@
 
 .team_details{
     padding: 2%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+   /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);*/
     transition-duration: .2s;
     transition-timing-function: linear;
 }
 
 .team_details:hover{
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+   /* -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);*/
 }
 
 .red{

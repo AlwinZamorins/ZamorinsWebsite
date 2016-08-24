@@ -1,8 +1,9 @@
 .worksPage{
-    background-color: dimgrey;
+    background-color: #EBE9E8;
     margin-top: 2%;
     opacity: 0.9;
     overflow: auto;
+    color: dimgrey;
 }
 
 .worksPage h1{
@@ -21,13 +22,66 @@
 .work_grid{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 10%;
+    margin-top: 2%;
 }
 
 .work_grid img{
-    width: 25%;
+    width: 40%;
+    margin: 2%;
+    border-radius: 20px;
+     -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    cursor: pointer;
 }
 
-.work_grid div{
-    padding: 1%;
-    
+.work_grid img:hover{
+     -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.rcube{
+    padding-top: 20%;
+}
+
+hr{
+    border-top: 1px solid dimgrey !important;
+}
+
+.modal-content {
+	border-radius: 0px !important;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.modal-header h4{
+	text-align: center;
+    color: darkslategrey;
+}
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-body img{
+    width: 25%;
+    border-radius: 10px;
+}
+
+.modal-body p{
+    padding:3%; 
+    color: darkslategrey;
+}
+
+.modal_btn {
+    background-color: darkred !important;
+    border-color: darkred !important;
+    opacity: 0.8;
+}
+
+.modal_btn:hover {
+    opacity: 0.5;
+    transition-duration: .2s;
+    transition-timing-function: linear;
 }
