@@ -69,6 +69,7 @@ hr{
     width: 100%;
     font-family: 'Josefin Sans', sans-serif;
     background: #FF6F6F !important;
+    border-color: #FF6F6F !important;
 }
 
 .send_message span{
@@ -103,4 +104,23 @@ hr{
     color: #FF9696;
     font-size: 20px;
     font-weight: bold;
+}
+
+input.ng-invalid {
+    color: firebrick;
+}
+input.ng-valid {
+    color: darkgreen;
+}
+
+textarea.ng-invalid {
+    color: firebrick;
+}
+textarea.ng-valid {
+    color: darkgreen;
+}
+
+.note{
+    font-family: 'Josefin Sans', sans-serif;
+    float: right;
 }

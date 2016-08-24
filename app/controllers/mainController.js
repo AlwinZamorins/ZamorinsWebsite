@@ -121,7 +121,7 @@ app.controller('worksController', function($scope) {
             $('#nav_works').removeClass('animated  zoomIn');
         });
 });
-app.controller('contactController', function($scope) {
+app.controller('contactController', function($scope,$http) {
     $("#nav_home").removeClass('selected_nav');
     $("#nav_about").removeClass('selected_nav');
     $("#nav_team").removeClass('selected_nav');
@@ -132,4 +132,30 @@ app.controller('contactController', function($scope) {
         $('#nav_contact').addClass('animated zoomIn').one(animationEnd, function() {
             $('#nav_contact').removeClass('animated  zoomIn');
         });
+    
+    /*Form*/
+    $(function() {
+      $("#name").focus();
+    });
+    
+    $scope.sendMail = function() {
+        var data = {
+            'name': $scope.name,
+            'email': $scope.email,
+            'subject': $scope.subject,
+            'message': $scope.message
+        }
+        $http.post("app/model/sendmail.php", data).success(function(data) {
+            if (data!="success") {
+                alert('Error!');
+            }
+            else {
+                $scope.name=null;
+                $scope.email=null;
+                $scope.subject=null;
+                $scope.message=null;
+                alert('Success!');
+            }
+        });
+    }
 });

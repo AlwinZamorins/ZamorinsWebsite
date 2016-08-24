@@ -11,9 +11,6 @@
     outline: 1px solid slategrey;
 }
 
-
-
-
 .hide{
     display: none;
 }
@@ -31,7 +28,7 @@ body{
 
 .zamorins_title{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     text-transform: uppercase;
     transition-duration: .2s;
     transition-timing-function: linear;
@@ -199,7 +196,7 @@ body{
 /*social media*/
 .social_media{
     position: fixed;
-    width: 100%;
+    width: 5%;
     bottom: 30px;
 }
 
