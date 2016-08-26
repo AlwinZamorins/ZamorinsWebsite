@@ -3,6 +3,7 @@
     overflow: auto;
     padding: 2%;
     opacity: .9;
+    width: 100%;
 }
 
 .bgviolet{
@@ -10,7 +11,7 @@
 }
 
 .bgblue{
-    background-color: #22A7F0;
+    background-color: #3F6377;
 }
 
 .bggreen{
@@ -27,7 +28,7 @@
 }
 
 .txtblue{
-    color: #22A7F0;
+    color: #3F6377;
 }
 
 .txtgreen{
@@ -59,10 +60,10 @@
 }
 
 .grid p{
-    font-size: 18px;
+    font-size: 16px;
     padding: 5%;
     border: 1px solid;
-    box-shadow: 0px 0px 2px 1px;
+    border-color: transparent;
 }
 
 .aboutPage{
@@ -72,6 +73,7 @@
     font-size: 21px;
     text-align: center;
     letter-spacing: 1px;
+    padding-top: 0px;
 }
 
 
@@ -79,12 +81,15 @@
     overflow: auto;
     padding: 2%;
     opacity: .9;
-    color: dimgrey;
+    color: #51585A;
     font-size: 18px;
     margin-top: 0px;
     padding-top: 0px;
-    line-height: 2;
+    line-height: 24.5px;
+    text-align: justify;
 }
+
+
 
 .about_text span{
     font-size: 20px;
@@ -93,7 +98,7 @@
 }
 
 .about_head{
-    color: dimgrey;
+    color: #51585A;
 }
 
 .about_head h1{
@@ -101,6 +106,79 @@
 }
 
 .about_head hr{
-    border-top: 1px solid dimgrey;
+    border-top: 1px solid #51585A;
     margin-top: 0px;
+}
+
+
+.why_us h4{
+    color: #51585A;
+    font-size: 18px;
+    width: 100%;
+}
+
+.why_us p{
+    color: #51585A;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+
+.advantages h4{
+    color: #51585A;
+    font-size: 18px;
+    width: 100%;
+    text-transform: uppercase;
+    padding-bottom: 1%;
+}
+
+.advantages li{
+    color: #51585A;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    padding-bottom: 1%;
+    padding-left: 8%;
+    font-size: 16px;
+    list-style: none;
+}
+
+.why_us hr{
+    width: 12% !important;
+}
+
+.zam_logo {
+	width: 65%;
+}
+
+.advantages {
+    margin-bottom: 3%;
+}
+
+.adv_span{
+    width: 32px !important;
+    font-size: 13px;
+}
+
+.have_idea{
+    color: #51585A;
+    letter-spacing: 2px;
+}
+
+.have_idea a{
+    color: #23527c !important;
+    letter-spacing: 2px;
+    text-decoration: none !important;
+    border: 2px solid #23527c;
+    padding: 1%;
+    font-size: 10px;
+    border-radius: 8px;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    margin: 10px;
+}
+
+.have_idea a:hover{
+     border-radius: 0px;
 }

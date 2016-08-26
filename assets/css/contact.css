@@ -68,8 +68,8 @@ hr{
     margin-bottom: 5% !important;
     width: 100%;
     font-family: 'Josefin Sans', sans-serif;
-    background: #FF6F6F !important;
-    border-color: #FF6F6F !important;
+    background: #0E8ACB !important
+    border-color: #0E8ACB !important
 }
 
 .send_message span{
@@ -101,7 +101,7 @@ hr{
 }
 
 .love {
-    color: #FF9696;
+    color: #0E8ACB;
     font-size: 20px;
     font-weight: bold;
 }

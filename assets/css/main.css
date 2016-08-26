@@ -37,17 +37,11 @@ body{
     width: 308px;
     display: inline;
     position: absolute;
-    background-image: -webkit-linear-gradient(92deg,#FF7F50,#5E611A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
+    color: #51585A;
 
 }
 .zamorins_title span{    font-size: 12px;
-    background-image: -webkit-linear-gradient(92deg,#5A6126,#5A6159);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
+    color: #0E8ACB;
     text-transform: capitalize;
 }
 
@@ -57,7 +51,7 @@ body{
 }
 
 .nav_webview a{
-    color: #5A611A;
+    color: #51585A;
     padding: 10px;
     float: right;
     font-family: 'Josefin Sans', sans-serif;
@@ -71,8 +65,8 @@ body{
 }
 
 .nav_webview a:hover{
-    border-bottom:2px solid #CDDC39;
-    color: coral;
+    border-bottom:2px solid #3F4038;
+    color: #0E8ACB;
     padding-bottom: 2px;
 }
 
@@ -87,8 +81,8 @@ body{
 }
 
 .selected_nav{
-    border-bottom:2px solid #CDDC39;
-    color: coral !important;
+    border-bottom:2px solid #3F4038;
+    color: #0E8ACB !important;
     padding-bottom: 2px !important;;
 }
 
@@ -114,7 +108,7 @@ body{
         padding: 1%;
     }
     .menu {
-        color: #FF733F;
+        color: #0E8ACB;
         float: right;
         padding: 13px;
         font-size: 28px !important;
@@ -166,18 +160,12 @@ body{
     letter-spacing: 1px;
     display: inline;
     position: absolute;
-    background-image: -webkit-linear-gradient(92deg,#FF7F50,#5E611A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
-     padding-top: 8px;
+    color: #51585A;
+    padding-top: 8px;
 }
 .zamorins_title_mob span{
     font-size: 10px;
-    background-image: -webkit-linear-gradient(92deg,#5A6126,#5A6159);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 60s infinite linear;
+    color: #0E8ACB;
     text-transform: capitalize;
     float: left;
 }
