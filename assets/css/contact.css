@@ -2,13 +2,14 @@
     background-color: dimgrey;
     margin-top: 2%;
     opacity: 0.9;
+    overflow: auto;
 }
 
 .contact_head h1{
 	text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
     margin-top: 1%;
+    font-family: 'Lobster', cursive;
 }
 
 .contact_head h4{
@@ -27,6 +28,8 @@ hr{
     margin-top: 0px !important;
     margin-bottom: 0px;
     width: 20%;
+    border-top: 2px solid white !important;
+    width: 12% !important;
 }
 
 .input_text{

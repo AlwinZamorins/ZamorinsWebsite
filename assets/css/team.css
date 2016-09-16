@@ -26,11 +26,13 @@
     letter-spacing: 2px;
     line-height: 22px;
     margin-top: 1%;
+    font-family: serif;
 }
 
 .team_head h1{
     font-size: 23px;
     margin-top: 0px;
+    font-family: 'Lobster', cursive;
 }
 
 .team_head hr{
@@ -115,6 +117,7 @@
     text-decoration: none;
 }
 .our-team .team-title{
+    font-family: 'Lobster', cursive;
     font-size: 22px;
     font-weight: bold;
     color: #283a44;

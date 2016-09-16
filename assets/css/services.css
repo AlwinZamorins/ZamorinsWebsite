@@ -1,0 +1,82 @@
+.servicesPage{
+    margin-top: 1%;
+    padding: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 0px;
+    background-color: #EBE9E8;
+    overflow: auto;
+    width: 100%;
+}
+
+.modal-dialog {
+	    margin-top: 10% !important;
+    
+}
+
+.main_head{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 1%;
+    color: #51585A;
+    font-family: 'Lobster', cursive;
+    padding-top: 1%;
+}
+
+.servicesPage p{
+    font-family: serif;
+    color: #5A585A;
+    font-size: 17px;
+}
+
+.servicesPage p a{
+    color: #0E8ACF;
+    text-decoration: none !important;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+
+.servicesPage p a:hover{
+    color: coral;
+}
+
+.servicesPage button{
+    float: right;
+}
+
+.pay_now{
+    overflow: auto;
+}
+
+.sub_points{
+    text-align: left;
+    font-size: 16px;
+    font-family: serif;
+    color: #4A4442;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.sub_heading{
+    text-align: center;
+    font-size: 19px;
+    font-family: serif;
+    color: #4777B5;
+}
+
+.modal-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #52529C;
+}
+
+.services_head{
+    background-color: #5BC0DE;
+    padding: 1%;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}

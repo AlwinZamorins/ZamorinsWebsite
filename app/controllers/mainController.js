@@ -19,6 +19,10 @@ app.config(function($routeProvider) {
                 templateUrl: "views/works.html",
                 controller: "worksController"
             })
+            .when("/services", {
+                templateUrl: "views/services.html",
+                controller: "servicesController"
+            })
             .when("/team", {
                 templateUrl: "views/team.html",
                 controller: "teamController"
@@ -64,6 +68,7 @@ app.controller('homeController', function($scope) {
     $("#nav_team").removeClass('selected_nav');
     $("#nav_works").removeClass('selected_nav');
     $("#nav_contact").removeClass('selected_nav');
+    $("#nav_services").removeClass('selected_nav');
     
     /*animation*/
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -90,6 +95,7 @@ app.controller('aboutController', function($scope) {
     $("#nav_team").removeClass('selected_nav');
     $("#nav_works").removeClass('selected_nav');
     $("#nav_contact").removeClass('selected_nav');
+    $("#nav_services").removeClass('selected_nav');
     
     /*animation*/
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -115,18 +121,35 @@ app.controller('worksController', function($scope) {
     $("#nav_team").removeClass('selected_nav');
     $("#nav_works").addClass('selected_nav');
     $("#nav_contact").removeClass('selected_nav');
+    $("#nav_services").removeClass('selected_nav');
     
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         $('#nav_works').addClass('animated zoomIn').one(animationEnd, function() {
             $('#nav_works').removeClass('animated  zoomIn');
         });
 });
+app.controller('servicesController', function($scope) {
+    $("#nav_home").removeClass('selected_nav');
+    $("#nav_about").removeClass('selected_nav');
+    $("#nav_team").removeClass('selected_nav');
+    $("#nav_works").removeClass('selected_nav');
+    $("#nav_services").addClass('selected_nav');
+    $("#nav_contact").removeClass('selected_nav');
+    
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $('#nav_services').addClass('animated zoomIn').one(animationEnd, function() {
+            $('#nav_services').removeClass('animated  zoomIn');
+        });
+});
+
+
 app.controller('contactController', function($scope,$http) {
     $("#nav_home").removeClass('selected_nav');
     $("#nav_about").removeClass('selected_nav');
     $("#nav_team").removeClass('selected_nav');
     $("#nav_works").removeClass('selected_nav');
     $("#nav_contact").addClass('selected_nav');
+    $("#nav_services").removeClass('selected_nav');
     
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
         $('#nav_contact').addClass('animated zoomIn').one(animationEnd, function() {

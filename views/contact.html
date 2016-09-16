@@ -1,14 +1,14 @@
-<div class="contactPage container" ng-controller="contactController">
+<div class="contactPage" ng-controller="contactController">
     <div class="contact_head">
-        <h1>Contact Us</h1>
-        <hr>
+        <h1 >Contact Us</h1>
+        <hr style="border-top: 2px solid white !important;">
         <h4>We'd <span class="love">&#9825;</span> to help! &nbsp;&nbsp;Feel free to say hello!</h4>
     </div>
     <div>
         <form name="myForm" class="col-md-6 contact_form my-form" ng-class="class" novalidate>
-            <input id="name" ng-maxlength="30" ng-minlength="3" ng-model="name" type="text" class="input_text animated fadeInUp" placeholder="May we know your name!"  required/>
-            <input  ng-maxlength="30" ng-minlength="6" ng-model="email" type="email" class="input_text animated fadeInUp" placeholder="Kindly provide your Email Id!"  required/>
-            <input ng-maxlength="40" ng-minlength="5" ng-model="subject" type="text" class="input_text animated fadeInUp" placeholder="Enter the subject here!"  required/>
+            <input id="name" ng-maxlength="30" ng-minlength="3" ng-model="name" type="text" class="input_text animated fadeInUp" placeholder="Name"  required/>
+            <input  ng-maxlength="30" ng-minlength="6" ng-model="email" type="email" class="input_text animated fadeInUp" placeholder="Email"  required/>
+            <input ng-maxlength="40" ng-minlength="5" ng-model="subject" type="text" class="input_text animated fadeInUp" placeholder="Subject"  required/>
             <textarea ng-maxlength="2000" ng-minlength="10" ng-model="message" rows="5" cols="50" class="input_textarea animated fadeInUp" placeholder="How can we help you?" required></textarea>
             <p class="note">NOTE: All fields are required</p>
             <button ng-click="sendMail()" ng-disabled="myForm.$invalid" class="btn btn-primary send_message animated fadeInUp">Send Message</button>
@@ -18,15 +18,21 @@
                 <span class="material-icons">email</span> 
                 <h4>contact@zamorinstech.com</h4>
             </div>
-            <div class="detail animated fadeInUp">
+            
+               <!--<div class="detail animated fadeInUp">
                 <span class="material-icons">phone</span> 
                 <h4>USA: 515-7791703</h4><br/><br/>
                 <h4 class="offshore_num">Offshore: 0487-2555385</h4>
-            </div>
+            </div>-->
+            
             <div class="detail animated fadeInUp">
                 <span class="material-icons">location_on</span>
-                <h4>USA: 5730 NW 4th CT, Des Moines, IA 50313, USA</h4><br/><br/>
-                <h4 class="offshore_num">Offshore: Thaikad Junction, Guruvayoor, Thrissur</h4>
+                <h4>USA: 5730 NW 4th CT, Des Moines, IA 50313, USA</h4>
+            </div>
+            
+            <div class="detail animated fadeInUp">
+                <span class="material-icons">location_on</span>
+                <h4>Offshore: Thaikad Junction, Guruvayoor, Thrissur</h4>
             </div>
         </div>
     </div>
